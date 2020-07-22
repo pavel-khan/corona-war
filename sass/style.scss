@@ -1,0 +1,543 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap");
+@import "_variables";
+@import "_extand";
+@import "_mixin";
+@import "_reset";
+
+header {
+  @include background-porperty(url(../../images/Corona-header.png));
+
+  .navbar {
+    padding-bottom: 0;
+    .navbar-toggler{
+      padding: 8px 12px;
+      border: 2px solid #706ad4;
+      &:focus{
+        outline: none;
+      }
+      .navbar-toggler-icon {
+      width: 40px;
+      height: 25px;
+      background-color: #fea71a;
+    }
+    }
+    .navbar-nav {
+      .nav-item {
+        position: relative;
+        margin-right: 8px;
+        &::before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 3px;
+          background-color: $primary-color;
+          bottom: -23px;
+          transform: scale(0);
+          transition: 0.5s ease;
+        }
+        &:focus,
+        &:hover .nav-link {
+          color: $primary-color;
+        }
+        &:focus,
+        &:hover::before {
+          transform: scale(1);
+        }
+        .nav-link {
+          @include text($heading-color, 16px, 600);
+        }
+      }
+    }
+    .btn-symptom {
+      @include text($heading-color, 16px, 600);
+      @extend %btn-symptom;
+      padding: 10px 15px;
+      border-radius: 10px;
+      &:focus {
+        outline: none;
+      }
+      &:hover {
+        box-shadow: $box-shadow;
+      }
+    }
+  }
+
+  .home-section {
+    .title {
+      h3 {
+        @include text($heading-color, 30px, 700);
+      }
+      p {
+        width: 80%;
+      }
+    }
+    ul.buttons {
+      margin-top: 30px;
+      li {
+        margin-right: 15px;
+      }
+    }
+    .case-indicators {
+      margin: 50px 0;
+      div:first-child {
+        @include background-porperty(url(../../images/Corona-ab-3.png));
+        border-bottom: 2px solid $secondary-color;
+        border-radius: 20px;
+        h4 {
+          color: $secondary-color;
+        }
+      }
+      div:nth-child(2) {
+        @include background-porperty(url(../../images/Corona-ab-2.png));
+        border-bottom: 2px solid green;
+        border-radius: 20px;
+        h4 {
+          color: green;
+        }
+      }
+      div:last-child {
+        @include background-porperty(url(../../images/Corona-ab-1.png));
+        border-bottom: 2px solid red;
+        border-radius: 20px;
+        h4 {
+          color: red;
+        }
+      }
+      div {
+        text-align: center;
+        padding: 20px 30px;
+        background-position: bottom;
+        box-shadow: 0 7px 12px rgba(0, 0, 0, 0.5) !important;
+        margin-bottom: 20px;
+        span {
+          @include text(#000000, 30px, 600);
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+  .banner-section {
+    @include section-porperty(transparent, 30px, 50px);
+  }
+}
+
+.live-report-section {
+  .heading {
+    h2 {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        right: 7px;
+        width: 13px;
+        height: 13px;
+        background-color: red;
+        border-radius: 50%;
+        animation-name: live;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        @keyframes live {
+          0% {
+            opacity: 1;
+          }
+          100% {
+            opacity: 0;
+          }
+        }
+      }
+    }
+  }
+  .updates-content {
+    background-color: $content-color;
+    border-radius: 20px;
+    margin: 50px 0;
+    padding: 30px;
+    .case-number {
+      ul:first-child {
+        border-right: 5px solid #f05866;
+      }
+      ul:nth-child(2) {
+        border-right: 5px solid #51911c;
+      }
+      ul:nth-child(3) {
+        border-right: 5px solid #af0d09;
+      }
+      ul:last-child {
+        border-right: 5px solid $primary-color;
+      }
+      ul {
+        margin-bottom: 25px;
+        li {
+          margin-right: 20px;
+          img {
+            animation-name: coronav;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            @keyframes coronav {
+              0% {
+                transform: rotate(0deg);
+              }
+              25% {
+                transform: rotate(90deg);
+              }
+              50% {
+                transform: rotate(180deg);
+              }
+              75% {
+                transform: rotate(270deg);
+              }
+              100% {
+                transform: rotate(360deg);
+              }
+            }
+          }
+          span {
+            @include text(#000000, 40px, 600);
+          }
+        }
+      }
+    }
+    form {
+      .form-control {
+        background-color: $content-color;
+        border-radius: 10px;
+        &:focus {
+          border-color: #fea71a;
+          box-shadow: 0 0 0 0.2rem #fea71a2e;
+        }
+      }
+    }
+    .report-table {
+      height: 300px;
+      overflow-x: hidden;
+    }
+  }
+}
+
+.about-corona-section {
+  @include section-porperty(transparent, 30px, 50px);
+  .heading {
+    h2 {
+      display: inline-block;
+      padding: 0 7px;
+      font-size: 30px;
+    }
+  }
+  .about-content {
+    margin-top: 30px;
+    a {
+      margin-top: 30px;
+    }
+  }
+}
+.Symptoms-section {
+  @include section-porperty(transparent, 30px, 50px);
+  .symptoms-content {
+    margin-top: 60px;
+    .symptom {
+      .sym-img {
+        position: relative;
+        span {
+          position: absolute;
+          color: #fff;
+          font-size: 29px;
+          font-weight: 700;
+          top: 31px;
+          right: 40px;
+          animation-name: sym-num;
+          animation-duration: 2s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          @keyframes sym-num {
+            0% {
+              transform: scale(1);
+            }
+            50% {
+              transform: scale(1.7);
+            }
+            100% {
+              transform: scale(1);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.emergency-service-section {
+  @include section-porperty(transparent, 230px, 50px);
+  .emergency-content {
+    @include background-porperty(url(../../images/Corona-emergency-bg.png));
+    position: relative;
+    padding: 70px 20px;
+    .heading {
+      h2 {
+        background-color: transparent;
+      }
+      p {
+        color: #ffffff;
+        margin: 35px 0;
+        width: 80%;
+      }
+    }
+    a {
+      width: 200px;
+      font-size: 20px;
+    }
+    .emg-img {
+      position: absolute;
+      bottom: 0;
+      transform: translateY(180px);
+    }
+  }
+}
+
+.prevention-section {
+  @include section-porperty(transparent, 30px, 50px);
+  .prevention-content {
+    margin-top: 80px;
+    .prevention {
+      text-align: center;
+      img {
+        height: 100px;
+        object-fit: contain;
+      }
+      h4 {
+        margin: 20px 0;
+      }
+      p {
+        width: 80%;
+        margin: auto;
+      }
+    }
+  }
+}
+.expert-section {
+  padding-bottom: 80px;
+  .expert-content {
+    margin-top: 80px;
+    .expert {
+      .expert-img {
+        img {
+          width: 100%;
+        }
+      }
+      .expert-info {
+        width: 80%;
+        margin: 0 auto;
+        transform: translateY(-50px);
+        background-color: white;
+        padding: 20px 0;
+        position: relative;
+        border-bottom: 5px solid $border-color;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5) !important;
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -5px;
+          width: 100%;
+          height: 5px;
+          transform: scale(0);
+          transition: 0.6s ease;
+        }
+
+        &:hover::before {
+          background-color: $primary-color;
+          transform: scale(1);
+        }
+        &:hover {
+          transform: translateY(-70px);
+        }
+        &:hover h4 {
+          color: $primary-color;
+        }
+        p {
+          margin-top: 3px;
+        }
+        .social-icon {
+          margin-top: 20px;
+          a {
+            margin-right: 10px;
+            i {
+              color: $border-color;
+              font-size: 18px;
+            }
+            &:hover i {
+              color: $primary-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.article-section {
+  @include section-porperty($section-color, 60px, 90px);
+  .article-content {
+    margin-top: 60px;
+    .article {
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5) !important;
+      border-radius: 10px;
+      .blog-text {
+        padding: 20px;
+        margin-top: 15px;
+        ul.date-comnt {
+          li {
+            margin-right: 10px;
+            i {
+              margin-right: 5px;
+            }
+          }
+        }
+        h4 {
+          margin: 20px 0;
+          font-size: 26px;
+        }
+        p {
+          margin-bottom: 20px;
+        }
+        a {
+          @include text($primary-color, 18px, 600);
+          &:hover {
+            text-decoration: none;
+          }
+          i {
+            margin-left: 5px;
+            color: $primary-color;
+            animation-name: arrow;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            @keyframes arrow {
+              0% {
+                transform: translateX(0);
+              }
+              50% {
+                transform: translateX(10px);
+              }
+              100% {
+                transform: translateX(0);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.questions-section {
+  @include section-porperty(transparent, 50px, 70px);
+  .question-content {
+    margin-top: 80px;
+    .question {
+      margin-bottom: 35px;
+      h5 {
+        margin-bottom: 15px;
+      }
+    }
+    .email-submit {
+      background-color: $section-color;
+      padding: 20px;
+      border-radius: 10px;
+      h4 {
+      }
+      p {
+        margin: 30px 0;
+      }
+      .form-inline {
+        .form-control {
+          border-radius: 10px;
+          &:focus {
+            border-color: #fea71a;
+            box-shadow: 0 0 0 0.2rem #fea71a2e;
+          }
+        }
+      }
+    }
+  }
+}
+.get-touch-section {
+  @include section-porperty(transparent, 50px, 70px);
+  .get-touch-content {
+    margin-top: 60px;
+    .get-form {
+      padding: 20px;
+      border-radius: 10px;
+      form {
+        .form-control {
+          border-radius: 10px;
+          &:focus {
+            border-color: #fea71a;
+            box-shadow: 0 0 0 0.2rem #fea71a2e;
+          }
+        }
+      }
+    }
+    .get-contact {
+      ul {
+        margin-bottom: 30px;
+        li {
+          margin-right: 15px;
+          a {
+            i {
+              @include text($primary-color, 25px, 600);
+            }
+          }
+          h6 {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+}
+footer {
+  @include section-porperty($secondary-color, 50px, 0);
+  .footer-content {
+    margin-top: 60px;
+    .footer-logo {
+      p {
+        color: #ffffff;
+        margin-top: 40px;
+      }
+    }
+    .footer {
+      ul {
+        li {
+          margin-bottom: 15px;
+          a {
+            @include text(#ffffff, 18px, 400);
+            display: block;
+            &:hover {
+              text-decoration: none;
+              transform: translateX(10px);
+            }
+          }
+        }
+      }
+    }
+    .footer-follow-us {
+      h6 {
+        color: #ffffff;
+        margin-bottom: 20px;
+      }
+      a {
+        margin-right: 10px;
+        i {
+          color: #ffffff;
+          font-size: 18px;
+        }
+        &:hover i {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}

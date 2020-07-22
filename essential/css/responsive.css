@@ -1,0 +1,149 @@
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  header .navbar .navbar-nav .nav-item {
+    margin-right: 0px;
+  }
+  h2{
+    font-size: 30px;
+  }
+  .Symptoms-section .symptoms-content .symptom .sym-img span {
+    right: 19px;
+  }
+  .emergency-service-section .emergency-content .emg-img {
+    bottom: -7px;
+  }
+
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  header .navbar .navbar-nav .nav-item .nav-link {
+    text-align: center;
+  }
+  header .navbar .navbar-nav .nav-item::before {
+    width: 0;
+  }
+  .Symptoms-section .symptoms-content .symptom .sym-img span {
+  font-size: 20px;
+  top: 22px;
+  right: 15px;
+  }
+  .emergency-service-section .emergency-content .emg-img {
+    bottom: -12px;
+    right: 0;
+  }
+  .case-number{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .case-number ul{
+    width: 45%;
+    margin-right: 20px;
+  }
+  .case-number ul li{
+    margin-bottom: 10px;
+  }
+  .case-number ul li span{
+    font-size: 30px !important;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (max-width: 767px) {
+  header .navbar .navbar-nav .nav-item .nav-link {
+    text-align: center;
+  }
+  header .navbar .navbar-nav .nav-item::before {
+    width: 0;
+  }
+  header .home-section .title h3 {
+    font-size: 25px;
+  }
+  h1{
+    font-size: 30px;
+  }
+  .case-indicators, .case-number{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .case-indicators div{
+    width: 45%;
+    margin: 0 10px;
+  }
+  .case-number ul{
+    width: 45%;
+    margin-right: 20px;
+  }
+  .case-number ul li{
+    margin-bottom: 10px;
+  }
+  .case-number ul li span{
+    font-size: 30px !important;
+  }
+  .about-corona-section .heading h2 {
+    font-size: 28px;
+  }
+  .about-corona-section .about-content {
+    margin-top: 20px;
+  }
+  .about-corona-section .about-content a {
+    margin-top: 15px;
+  }
+  .Symptoms-section .symptoms-content .symptom .sym-img span {
+  font-size: 18px;
+  top: 13px;
+  right: 8px;
+  }
+  .emergency-service-section .col-lg-3.col-md-6{
+    display: none;
+  }
+  .emergency-service-section {
+  padding-top: 0;
+  }
+  .get-touch-section .col-lg-4.col-md-4.col-sm-10{
+    display: none;
+  }
+
+}
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 575px) {
+  .about-corona-section .col-lg-4.col-md-6.col-sm-6.col-10{
+  order: 2;
+  margin-top: 20px;
+  }
+  ..Symptoms-section .symptoms-content .symptom .sym-img span {
+  top: 14px;
+  right: 10px;
+  }
+  .home-section .title{
+    text-align: center;
+  }
+  .home-section .title p{
+    width: 100% !important;
+  }
+  .home-section .buttons{
+    justify-content: center;
+  }
+}
+@media (max-width: 500px) {
+  .home-section .title h1{
+    font-size: 35px;
+  }
+  .form-inline{
+    justify-content: center;
+  }
+  h2{
+    font-size: 29px;
+  }
+  .case-number ul{
+    width: 45%;
+    margin-right: 10px;
+  }
+  .Symptoms-section .symptoms-content .symptom .sym-img span {
+  top: 10px;
+  }
+}

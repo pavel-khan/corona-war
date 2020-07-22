@@ -1,0 +1,58 @@
+* {
+  transition: 0.5s ease;
+}
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 1.091;
+  @include background-porperty(url(../../images/Corona-bg-2.jpg));
+}
+
+h1 {
+  @include text($secondary-color, 40px, 900);
+  @include trans-bgclr-line(uppercase, transparent, 1.4);
+}
+h2 {
+  @include text(#ffffff, 35px, 900);
+  @include trans-bgclr-line(uppercase, $secondary-color, 1.5);
+  display: inherit;
+}
+h3 {
+  @include text($heading-color, 25px, 600);
+  @include trans-bgclr-line(capitalize, transparent, 1.4);
+}
+h4 {
+  @include text($text-color2, 20px, 600);
+  @include trans-bgclr-line(capitalize, transparent, 1.5);
+}
+h5 {
+  @include text($text-color2, 20px, 700);
+  @include trans-bgclr-line(capitalize, transparent, 1.091);
+}
+h6 {
+  @include text($border-color, 24px, 500);
+  @include trans-bgclr-line(capitalize, transparent, 1.4);
+  margin-top: 20px;
+}
+p {
+  @include text($text-color, 16px, 400);
+  line-height: 1.5;
+}
+.btnc {
+  @extend %btnc;
+}
+
+.btn-custom {
+  @include text(#ffffff, 16px, 600);
+  @include border-poperty(1px, transparent, 10px);
+  background-color: $primary-color;
+  text-transform: capitalize;
+  padding: 10px 15px;
+  &:focus {
+    @extend %btnc-focus;
+  }
+  &:hover {
+    text-decoration: none;
+    background-color: transparent;
+    @include border-poperty(1px, $primary-color, 10px);
+  }
+}

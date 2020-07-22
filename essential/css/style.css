@@ -1,0 +1,886 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap");
+header .navbar .btn-symptom {
+  background-color: #fec66a;
+  background-color: linear-gradient(45deg, #fec66a 0%, #feb031 100%);
+}
+
+.btnc {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  line-height: 1.5;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  border: none;
+  text-decoration: none;
+}
+
+.btn-custom:focus {
+  -webkit-box-shadow: 0 0 0 0.1rem #fea71a52;
+          box-shadow: 0 0 0 0.1rem #fea71a52;
+  outline: 0;
+}
+
+* {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 1.091;
+  background-image: url(../../images/Corona-bg-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  color: #706ad4;
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  background-color: transparent;
+  line-height: 1.4;
+}
+
+h2 {
+  color: #ffffff;
+  font-size: 35px;
+  font-weight: 900;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  background-color: #706ad4;
+  line-height: 1.5;
+  display: inherit;
+}
+
+h3 {
+  color: #01386e;
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 0;
+  text-transform: capitalize;
+  background-color: transparent;
+  line-height: 1.4;
+}
+
+h4 {
+  color: #333333;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 0;
+  text-transform: capitalize;
+  background-color: transparent;
+  line-height: 1.5;
+}
+
+h5 {
+  color: #333333;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 0;
+  text-transform: capitalize;
+  background-color: transparent;
+  line-height: 1.091;
+}
+
+h6 {
+  color: #212529;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 0;
+  text-transform: capitalize;
+  background-color: transparent;
+  line-height: 1.4;
+  margin-top: 20px;
+}
+
+p {
+  color: #666;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+.btn-custom {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 0;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background-color: #fea71a;
+  text-transform: capitalize;
+  padding: 10px 15px;
+}
+
+.btn-custom:hover {
+  text-decoration: none;
+  background-color: transparent;
+  border: 1px solid #fea71a;
+  border-radius: 10px;
+}
+
+header {
+  background-image: url(../../images/Corona-header.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header .navbar {
+  padding-bottom: 0;
+}
+
+header .navbar .navbar-toggler {
+  padding: 8px 12px;
+  border: 2px solid #706ad4;
+}
+
+header .navbar .navbar-toggler:focus {
+  outline: none;
+}
+
+header .navbar .navbar-toggler .navbar-toggler-icon {
+  width: 40px;
+  height: 25px;
+  background-color: #fea71a;
+}
+
+header .navbar .navbar-nav .nav-item {
+  position: relative;
+  margin-right: 8px;
+}
+
+header .navbar .navbar-nav .nav-item::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #fea71a;
+  bottom: -23px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+header .navbar .navbar-nav .nav-item:focus,
+header .navbar .navbar-nav .nav-item:hover .nav-link {
+  color: #fea71a;
+}
+
+header .navbar .navbar-nav .nav-item:focus, header .navbar .navbar-nav .nav-item:hover::before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+header .navbar .navbar-nav .nav-item .nav-link {
+  color: #01386e;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+header .navbar .btn-symptom {
+  color: #01386e;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 0;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+header .navbar .btn-symptom:focus {
+  outline: none;
+}
+
+header .navbar .btn-symptom:hover {
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5) !important;
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5) !important;
+}
+
+header .home-section .title h3 {
+  color: #01386e;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+header .home-section .title p {
+  width: 80%;
+}
+
+header .home-section ul.buttons {
+  margin-top: 30px;
+}
+
+header .home-section ul.buttons li {
+  margin-right: 15px;
+}
+
+header .home-section .case-indicators {
+  margin: 50px 0;
+}
+
+header .home-section .case-indicators div:first-child {
+  background-image: url(../../images/Corona-ab-3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom: 2px solid #706ad4;
+  border-radius: 20px;
+}
+
+header .home-section .case-indicators div:first-child h4 {
+  color: #706ad4;
+}
+
+header .home-section .case-indicators div:nth-child(2) {
+  background-image: url(../../images/Corona-ab-2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom: 2px solid green;
+  border-radius: 20px;
+}
+
+header .home-section .case-indicators div:nth-child(2) h4 {
+  color: green;
+}
+
+header .home-section .case-indicators div:last-child {
+  background-image: url(../../images/Corona-ab-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom: 2px solid red;
+  border-radius: 20px;
+}
+
+header .home-section .case-indicators div:last-child h4 {
+  color: red;
+}
+
+header .home-section .case-indicators div {
+  text-align: center;
+  padding: 20px 30px;
+  background-position: bottom;
+  -webkit-box-shadow: 0 7px 12px rgba(0, 0, 0, 0.5) !important;
+          box-shadow: 0 7px 12px rgba(0, 0, 0, 0.5) !important;
+  margin-bottom: 20px;
+}
+
+header .home-section .case-indicators div span {
+  color: #000000;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+header .banner-section {
+  background-color: transparent;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.live-report-section .heading h2 {
+  position: relative;
+}
+
+.live-report-section .heading h2::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: 7px;
+  width: 13px;
+  height: 13px;
+  background-color: red;
+  border-radius: 50%;
+  -webkit-animation-name: live;
+          animation-name: live;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes live {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes live {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.live-report-section .updates-content {
+  background-color: #f8f8fe;
+  border-radius: 20px;
+  margin: 50px 0;
+  padding: 30px;
+}
+
+.live-report-section .updates-content .case-number ul:first-child {
+  border-right: 5px solid #f05866;
+}
+
+.live-report-section .updates-content .case-number ul:nth-child(2) {
+  border-right: 5px solid #51911c;
+}
+
+.live-report-section .updates-content .case-number ul:nth-child(3) {
+  border-right: 5px solid #af0d09;
+}
+
+.live-report-section .updates-content .case-number ul:last-child {
+  border-right: 5px solid #fea71a;
+}
+
+.live-report-section .updates-content .case-number ul {
+  margin-bottom: 25px;
+}
+
+.live-report-section .updates-content .case-number ul li {
+  margin-right: 20px;
+}
+
+.live-report-section .updates-content .case-number ul li img {
+  -webkit-animation-name: coronav;
+          animation-name: coronav;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes coronav {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  75% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes coronav {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  75% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.live-report-section .updates-content .case-number ul li span {
+  color: #000000;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.live-report-section .updates-content form .form-control {
+  background-color: #f8f8fe;
+  border-radius: 10px;
+}
+
+.live-report-section .updates-content form .form-control:focus {
+  border-color: #fea71a;
+  -webkit-box-shadow: 0 0 0 0.2rem #fea71a2e;
+          box-shadow: 0 0 0 0.2rem #fea71a2e;
+}
+
+.live-report-section .updates-content .report-table {
+  height: 300px;
+  overflow-x: hidden;
+}
+
+.about-corona-section {
+  background-color: transparent;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.about-corona-section .heading h2 {
+  display: inline-block;
+  padding: 0 7px;
+  font-size: 30px;
+}
+
+.about-corona-section .about-content {
+  margin-top: 30px;
+}
+
+.about-corona-section .about-content a {
+  margin-top: 30px;
+}
+
+.Symptoms-section {
+  background-color: transparent;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.Symptoms-section .symptoms-content {
+  margin-top: 60px;
+}
+
+.Symptoms-section .symptoms-content .symptom .sym-img {
+  position: relative;
+}
+
+.Symptoms-section .symptoms-content .symptom .sym-img span {
+  position: absolute;
+  color: #fff;
+  font-size: 29px;
+  font-weight: 700;
+  top: 31px;
+  right: 40px;
+  -webkit-animation-name: sym-num;
+          animation-name: sym-num;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes sym-num {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.7);
+            transform: scale(1.7);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes sym-num {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.7);
+            transform: scale(1.7);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.emergency-service-section {
+  background-color: transparent;
+  padding-top: 230px;
+  padding-bottom: 50px;
+}
+
+.emergency-service-section .emergency-content {
+  background-image: url(../../images/Corona-emergency-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 70px 20px;
+}
+
+.emergency-service-section .emergency-content .heading h2 {
+  background-color: transparent;
+}
+
+.emergency-service-section .emergency-content .heading p {
+  color: #ffffff;
+  margin: 35px 0;
+  width: 80%;
+}
+
+.emergency-service-section .emergency-content a {
+  width: 200px;
+  font-size: 20px;
+}
+
+.emergency-service-section .emergency-content .emg-img {
+  position: absolute;
+  bottom: 0;
+  -webkit-transform: translateY(180px);
+          transform: translateY(180px);
+}
+
+.prevention-section {
+  background-color: transparent;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.prevention-section .prevention-content {
+  margin-top: 80px;
+}
+
+.prevention-section .prevention-content .prevention {
+  text-align: center;
+}
+
+.prevention-section .prevention-content .prevention img {
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.prevention-section .prevention-content .prevention h4 {
+  margin: 20px 0;
+}
+
+.prevention-section .prevention-content .prevention p {
+  width: 80%;
+  margin: auto;
+}
+
+.expert-section {
+  padding-bottom: 80px;
+}
+
+.expert-section .expert-content {
+  margin-top: 80px;
+}
+
+.expert-section .expert-content .expert .expert-img img {
+  width: 100%;
+}
+
+.expert-section .expert-content .expert .expert-info {
+  width: 80%;
+  margin: 0 auto;
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+  background-color: white;
+  padding: 20px 0;
+  position: relative;
+  border-bottom: 5px solid #212529;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5) !important;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5) !important;
+}
+
+.expert-section .expert-content .expert .expert-info::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 5px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+}
+
+.expert-section .expert-content .expert .expert-info:hover::before {
+  background-color: #fea71a;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.expert-section .expert-content .expert .expert-info:hover {
+  -webkit-transform: translateY(-70px);
+          transform: translateY(-70px);
+}
+
+.expert-section .expert-content .expert .expert-info:hover h4 {
+  color: #fea71a;
+}
+
+.expert-section .expert-content .expert .expert-info p {
+  margin-top: 3px;
+}
+
+.expert-section .expert-content .expert .expert-info .social-icon {
+  margin-top: 20px;
+}
+
+.expert-section .expert-content .expert .expert-info .social-icon a {
+  margin-right: 10px;
+}
+
+.expert-section .expert-content .expert .expert-info .social-icon a i {
+  color: #212529;
+  font-size: 18px;
+}
+
+.expert-section .expert-content .expert .expert-info .social-icon a:hover i {
+  color: #fea71a;
+}
+
+.article-section {
+  background-color: #f7f8fc;
+  padding-top: 60px;
+  padding-bottom: 90px;
+}
+
+.article-section .article-content {
+  margin-top: 60px;
+}
+
+.article-section .article-content .article {
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5) !important;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5) !important;
+  border-radius: 10px;
+}
+
+.article-section .article-content .article .blog-text {
+  padding: 20px;
+  margin-top: 15px;
+}
+
+.article-section .article-content .article .blog-text ul.date-comnt li {
+  margin-right: 10px;
+}
+
+.article-section .article-content .article .blog-text ul.date-comnt li i {
+  margin-right: 5px;
+}
+
+.article-section .article-content .article .blog-text h4 {
+  margin: 20px 0;
+  font-size: 26px;
+}
+
+.article-section .article-content .article .blog-text p {
+  margin-bottom: 20px;
+}
+
+.article-section .article-content .article .blog-text a {
+  color: #fea71a;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.article-section .article-content .article .blog-text a:hover {
+  text-decoration: none;
+}
+
+.article-section .article-content .article .blog-text a i {
+  margin-left: 5px;
+  color: #fea71a;
+  -webkit-animation-name: arrow;
+          animation-name: arrow;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@-webkit-keyframes arrow {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes arrow {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.questions-section {
+  background-color: transparent;
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+
+.questions-section .question-content {
+  margin-top: 80px;
+}
+
+.questions-section .question-content .question {
+  margin-bottom: 35px;
+}
+
+.questions-section .question-content .question h5 {
+  margin-bottom: 15px;
+}
+
+.questions-section .question-content .email-submit {
+  background-color: #f7f8fc;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.questions-section .question-content .email-submit p {
+  margin: 30px 0;
+}
+
+.questions-section .question-content .email-submit .form-inline .form-control {
+  border-radius: 10px;
+}
+
+.questions-section .question-content .email-submit .form-inline .form-control:focus {
+  border-color: #fea71a;
+  -webkit-box-shadow: 0 0 0 0.2rem #fea71a2e;
+          box-shadow: 0 0 0 0.2rem #fea71a2e;
+}
+
+.get-touch-section {
+  background-color: transparent;
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+
+.get-touch-section .get-touch-content {
+  margin-top: 60px;
+}
+
+.get-touch-section .get-touch-content .get-form {
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.get-touch-section .get-touch-content .get-form form .form-control {
+  border-radius: 10px;
+}
+
+.get-touch-section .get-touch-content .get-form form .form-control:focus {
+  border-color: #fea71a;
+  -webkit-box-shadow: 0 0 0 0.2rem #fea71a2e;
+          box-shadow: 0 0 0 0.2rem #fea71a2e;
+}
+
+.get-touch-section .get-touch-content .get-contact ul {
+  margin-bottom: 30px;
+}
+
+.get-touch-section .get-touch-content .get-contact ul li {
+  margin-right: 15px;
+}
+
+.get-touch-section .get-touch-content .get-contact ul li a i {
+  color: #fea71a;
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.get-touch-section .get-touch-content .get-contact ul li h6 {
+  margin-top: 0;
+}
+
+footer {
+  background-color: #706ad4;
+  padding-top: 50px;
+  padding-bottom: 0;
+}
+
+footer .footer-content {
+  margin-top: 60px;
+}
+
+footer .footer-content .footer-logo p {
+  color: #ffffff;
+  margin-top: 40px;
+}
+
+footer .footer-content .footer ul li {
+  margin-bottom: 15px;
+}
+
+footer .footer-content .footer ul li a {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 0;
+  display: block;
+}
+
+footer .footer-content .footer ul li a:hover {
+  text-decoration: none;
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+}
+
+footer .footer-content .footer-follow-us h6 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+footer .footer-content .footer-follow-us a {
+  margin-right: 10px;
+}
+
+footer .footer-content .footer-follow-us a i {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+footer .footer-content .footer-follow-us a:hover i {
+  color: #fea71a;
+}
